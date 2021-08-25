@@ -7,7 +7,7 @@ from requests_aws4auth import AWS4Auth
 
 endpoint = 'https://search-photos-543puc4hnzrvr4oyaxiqfi7y24.us-east-1.es.amazonaws.com'
 username = 'master'
-password = 'coms6998hw2es_Hh'
+password = 'password'
 
 def lambda_handler(event, context):
     # TODO implement
