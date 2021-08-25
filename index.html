@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.8.0/dropzone.css" integrity="sha512-7uSoC3grlnRktCWoO4LjHMjotq8gf9XDFQerPuaph+cqR7JC9XKGdvN+UwZMC14aAaBDItdRj3DcSDs4kMWUgg==" crossorigin="anonymous" />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Your HTML elements here -->
+      <div>
+        <input class="input" type="text" id="search-content" placeholder="Search..">
+      </div>
+      <div>
+        <button class="button is-danger", id="voice">voice</button>
+      </div>
+      <div>
+          <button class="button is-info is-outlined" id="search">search</button>
+      </div>
+      <div id="pictures"></div>
+      <div class="file">
+        <label class="file-label">
+          <input class="file-input" type="file" id="files" multiple="multiple" name="resume" accept="image/gif, image/jpg, image/png">
+          <span class="file-cta">
+            <span class="file-icon">
+              <i class="fas fa-upload"></i>
+            </span>
+            <span class="file-label">
+              Choose pics
+            </span>
+          </span>
+        </label>
+      </div>
+      <div>
+        <span class="tag is-info">Add some tages</span>
+        <textarea class="textarea is-link" id="tages" placeholder="Link textarea"></textarea>
+      </div>
+        <div>
+            <button  class="button is-info is-outlined" id="upload" >upload</button>
+        </div>
+    </div>
+    <footer>
+      <script src="./apiGateway-js-sdk/apigClient.js"></script>
+      <script src="./apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+      <script src="./apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+      <script src="./apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+      <script src="./apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+      <script src="./apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+      <script src="./apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+      <script src="./apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+      <script src="./apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+      <script src="./apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+      <script src="./apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.8.0/min/dropzone.min.js" integrity="sha512-OrzfT4DZdVn0D1+jawpCOnNLYTdv2KJKeuPgjSn5vjD2ew59jXgSDItHrC4WYLfqxxONojMKc9Rl6s12GZKkiw==" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/06dfa103e1.js" crossorigin="anonymous"></script>
+      <script src="./js/function.js"></script>
+      <script src="./js/album.js"></script>
+    </footer>
+  </body>
+</html>
