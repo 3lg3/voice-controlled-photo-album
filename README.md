@@ -1,5 +1,3 @@
-Zhengyi Li zl3029
-Zhaoze Zhang UNI: zz2775 
+# Voice Controlled Photo Album
 
-s3:
-http://albumhwelevenonetwo.s3-website-us-east-1.amazonaws.com/
+![architecture](images/architecture.png)
